@@ -1,0 +1,29 @@
+{
+    "name": "jetmedianetwork/action-logger-php-library",
+    "type": "library",
+    "license": "proprietary",
+    "description": "Action Logger PHP library to manage user activity",
+    "keywords": [
+        "user Aactivity",
+        "action logger"     
+    ],
+
+    "homepage": "https://github.com/chandnitin333/acton_logger.git",
+    
+    "authors": [
+        {
+            "name": "Nitin Chandekar",
+            "email": "nitin.chandekar@jetsynthesys.com",
+            "role": "Sr. Software Engineer"
+        }
+    ],
+    "version": "v1.0.0",
+    "require": {
+        "php": "^8.1" 
+    },
+    "autoload": {
+        "psr-4": {
+            "Jet\\JetStream\\": "src"
+        }
+    }
+}
