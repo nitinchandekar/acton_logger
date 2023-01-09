@@ -24,7 +24,8 @@ final class ActionLogger{
             
             $log  = PHP_EOL.
                     "-------------------------".PHP_EOL;
-            $fileName = '/storage/logs/' . gethostname() . '-user-' . date('Y-m-d') . '.log';
+            $fileName = '../storage/logs/' . gethostname() . '-user-' . date('Y-m-d') . '.log';
+            
             file_put_contents($fileName, $this->loggerParams, FILE_APPEND);
         } catch (Throwable $th) {
             throw $th;
