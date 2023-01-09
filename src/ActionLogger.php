@@ -22,11 +22,9 @@ final class ActionLogger{
 
         try {
             
-            $log  = PHP_EOL.
-                    "-------------------------".PHP_EOL;
-            $fileName = '../storage/logs/' . gethostname() . '-user-' . date('Y-m-d') . '.log';
-            
-            file_put_contents($fileName, $this->loggerParams, FILE_APPEND);
+            // $log  = "----------Uer Activity---------------".PHP_EOL;
+            $fileName = '../storage/logs/' . gethostname() . '-User-' . date('Y-m-d') . '.log';
+            file_put_contents($fileName, json_encode($this->loggerParams).PHP_EOL, FILE_APPEND);
         } catch (Throwable $th) {
             throw $th;
         }
